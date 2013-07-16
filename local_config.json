@@ -1,0 +1,23 @@
+{
+    "android": {
+        "profiles": {
+            "DEFAULT": {
+                "keystore": "/Users/angelinokon/Documents/keystore/comthatsmymove.keystore", 
+                "keypass": "tmm4ever", 
+                "keyalias": "tmmkey", 
+                "storepass": "tmm4ever"
+            }
+        }, 
+        "sdk": "/Users/ttt/Dev_downloads/adt-bundle-mac-x86_64/sdk/"
+    }, 
+    "ios": {
+        "device": "simulator", 
+        "simulatorsdk": "6.0", 
+        "simulatorfamily": "iphone"
+    }, 
+    "general": {
+        "reload": {
+            "external": false
+        }
+    }
+}

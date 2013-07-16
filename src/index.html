@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Lemondrop</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/vendor/underscore.js"></script>
+  <script src="js/vendor/countdown.js"></script>
+  <script src="js/vendor/shake.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+<!-- Home page -->
+<div id="home" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Lemondrop</h1>
+    <a href="#about" data-rel="dialog" data-icon="info" class="ui-btn-right">About</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+
+    <a href="#practice" data-role="button" data-theme="b">Login</a>
+  </div><!-- /content -->
+
+ 
+
+</div><!-- /page -->
+
+<!-- Practice page -->
+<div id="practice" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Practice</h1>
+    <a href="#about" data-rel="dialog" data-icon="info" class="ui-btn-right">About</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+   
+
+    <div id="practice-video"></div>
+
+  </div><!-- /content -->
+
+  <div data-role="footer" data-id="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a class="prev-practice-video-btn" href="#prev-practice-video">Prev</a></li>
+        <li><a href="#practice" class="ui-btn-active title">Practice</a></li>
+        <li><a class="next-practice-video-btn" href="#next-practice-video">Next</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page -->
+
+<!-- Reward Practice Overlay -->
+<div id="reward-practice" data-role="dialog" data-title="You did it!">
+
+  <div data-role="content">
+  	<h2>You did it!</h2>
+      <ul>
+        <li class="xp">Level Up! You have practiced this move <strong>5</strong> times +10 pts</li>
+		    <li class="hat">King of the Move! You have the highest points worldwide for this move! +10 pts</li>
+      </ul>
+
+      <a href="https://twitter.com/intent/tweet?button_hashtag=ttw2013&amp;text=I%20just%20practiced%20for%20the%20ThrilltheWorld%20dance%20flash%20mob!%20Join%20us." class="twitter-hashtag-button" data-size="large" data-url="http://thatsmymove.com">Share on Twitter</a>
+
+      <a href="" data-rel= "back" data-role="button"> Close </a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<!-- Challenge page -->
+<div id="challenge" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Challenge</h1>
+    <a href="#about" data-rel="dialog" data-icon="info" class="ui-btn-right">About</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <h1>Weekly Challenge - June 17</h1>
+    <div id="faces">
+      <img width="122" src="images/challenges_best-zombie-pose.jpg">
+    </div>
+    <p>Submit your best zombie pose! Tweet your pic and add #ttw2013 or email <a href="mailto: angel@thatsmymove.com">angel@thatsmymove.com</a>.</p>
+    <a class="camera-btn" href="#camera" data-role="button" data-theme="b">Take my picture</a>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-id="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#challenge" class="ui-btn-active">Challenge</a></li>
+        <li><a href="#updates">Updates</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+<!-- Updates page -->
+<div id="updates" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Updates</h1>
+    <a href="#about" data-rel="dialog" data-icon="info" class="ui-btn-right">About</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <h2>From the #ttw2013 flickr feed</h2>
+
+    <div id="feed"></div>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-id="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#challenge">Challenge</a></li>
+        <li><a href="#updates" class="ui-btn-active">Updates</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+<!-- About page -->
+<div id="about" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <h1>About</h1>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <p>Become a Zombie and join over 10000 dancers in a world wide flash mob. Use our app to learn the dance moves to Michael Jackson's Thriller, connect with friends, and post your pictures online.  Your prize is to make history as we celebrate the 30th anniversary of Thriller and set out break the Guiness Book of World Records for the largest simultaneous Thriller dance. Roarrrr!</p>
+
+    <p>In our mobile app you can:</p>
+    <ul>
+      <li>Collect over 20 Signature Michael Jackson Moves</li>
+      <li>Workout to a 6 minute dance routine</li>
+      <li>Get quick 15 second dance lessons</li>
+      <li>Earn points for practicing so you stay motivated</li>
+      <li>Countdown timer to Thrilltime where everyone gathers to beat the world record.</li>
+    </ul>
+    <p>Go from being a novice dancer to feeling like a pro!</p>
+    <p>Zombies Rise for a good cause.</p>
+
+    <p>That'sMyMove! is a San Francisco based mobile product team. We exist to bring the joy of all types of dance and movement to people everywhere. Please follow us <a target="_blank" href="https://twitter.com/thatsmymove">@thatsmymove</a>.</p>
+
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="3X4TQS6QJJ89U">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-id="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#challenge">Challenge</a></li>
+        <li><a href="#updates">Updates</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

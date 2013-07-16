@@ -1,0 +1,39 @@
+{
+	"name": "Zombie Dancer",
+	"description": "learn the moves for ThrilltheWorl flash mob",
+	"author": "angel@thatsmymove.com",
+	"version": "0.1",
+	"homepage": "http://thatsmymove.com/zombiedancer",
+	"platform_version": "v1.4",
+	"modules": {
+		"contact": true,
+		"file": true,
+		"flurry": {
+			"android_api_key": "3MRZZNSNWDRX33JNZJ9Z"
+		},
+		"icons": {
+			"android": {
+				"36": "AppIcon36x36.png",
+				"48": "AppIcon48x48.png",
+				"72": "AppIcon76x76.png"
+			}
+		},
+		"is": true,
+		"logging": {
+			"level": "DEBUG"
+		},
+		"media": {},
+		"event": true,
+		"prefs": true,
+		"reload": true,
+		"request": {
+			"permissions": [
+				"http://*/*",
+				"https://*/*"
+			]
+		},
+		"tools": true
+	},
+	"plugins": {},
+	"config_version": "2"
+}

@@ -1,0 +1,98 @@
+*[data-role=page] {background-color:#000000;}
+
+#thrill-time {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color:#C54034; text-align:center;
+text-shadow: none; font-weight:300; margin-top:0px}
+
+#jgoopObject0 {margin:0 auto;}
+
+h1, h2 {color:#FFFFFF; font-weight:100;}
+
+*[data-role=content] h1,
+*[data-role=content] h2 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color:#FFFFFF; text-align:center; font-weight:100;}
+
+.ui-body-c, .ui-overlay-c {text-shadow: none;}
+
+#practice-video {
+  margin: 0 auto;
+  width: 350px;
+}
+
+#practice h2 {padding: 0 40px; float:left; margin: 0 auto; width: 400px;}
+#practice .prev-practice-video-btn,
+#practice .next-practice-video-btn {display: block; width: 40px; height: 40px; text-decoration: none; text-indent: -3000px;}
+
+#practice .prev-practice-video-btn {
+  background: transparent url(../images/prev_button.png) no-repeat 0 0;
+  float: left;
+}
+/*#practice .prev-practice-video-btn:active {
+  background-image: url(/images/left-light.gif);
+}*/
+
+#practice .next-practice-video-btn {
+  background: transparent url(../images/next_button.png) no-repeat 0 0;
+  float: right;
+}
+/*#practice .next-practice-video-btn:active {
+  background-image: url(/images/right-light.gif);
+}*/
+
+#reward-practice *[data-role=content] h2 {
+  color: #000000;
+}
+
+#reward-practice *[data-role=content] .xp {
+  background: transparent url(../images/Icon_XP.png) 0 0 no-repeat;
+}
+
+#reward-practice *[data-role=content] .hat {
+  background: transparent url(../images/Icon_Hat.png) 0 0 no-repeat;
+}
+
+#reward-practice *[data-role=content] li {
+  padding-left: 70px;
+  padding-bottom: 20px;
+}
+
+#reward-practice *[data-role=content] ul {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.record-video-btn {
+  position: absolute;
+  top: 400px;
+  left: 15px;
+}
+
+#get-rewards {
+  color: #ffffff;
+  font-weight: 100;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#get-rewards p {
+  position: absolute;
+  right: 130px;
+  top: 415px;
+  width: 80px;
+  margin: 5px 0 0 0;
+  line-height: 1.2em;
+}
+
+#get-rewards .reward-practice-btn {
+  position: absolute;
+  top: 420px;
+  right: 25px;
+}
+
+#challenge img {margin: 0 auto; display: block;}
+#challenge #faces.added-faces img {margin: 0; display: inline;}
+
+#challenge p {color: #ffffff; font-weight: 100;}
+
+#updates h2 {margin-bottom: 40px;}
+
+#about form {text-align: center; margin-top: 20px;}
+
+.ui-dialog .ui-link:visited, .ui-dialog .ui-link:hover, .ui-dialog .ui-link:active {color: #000000;}
