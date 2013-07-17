@@ -24,12 +24,61 @@
 
   <div data-role="content">
     <h1>Everybody dance!</h1>
-    <a href="#practice" data-role="button" data-theme="b">Login</a>
+    <a href="#song-selection" data-role="button" data-theme="b">Dance Now</a>
+  </div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Song Selection page -->
+<div id="song-selection" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Lemondrop</h1>
+    <a href="#about" data-rel="dialog" data-icon="info" class="ui-btn-right">About</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <h1>Which song would you like to dance to?</h1>
+    <div id="song-list">
+ 
+    <ul data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-theme="c">
+      <li><a href="#move-list"><h3>Treasure</h3><p>13 moves</p><p class="ui-li-aside">15% complete</p></a>
+      </li>
+      <li  data-theme="a"><h3>Blurred Lines</h3><p>12 moves</p><p class="ui-li-aside">Coming Soon</p>
+      </li>
+      <li data-theme="a"><h3>Thriller</h3><p>25 moves</p><p class="ui-li-aside">Coming Soon</p>
+      </li>
+    </ul>
+
+    </div>  
   </div><!-- /content -->
 
- 
+</div><!-- /page --> 
 
-</div><!-- /page -->
+<!-- Move Selection page -->
+<div id="move-list" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <a href="#move-selection" data-role="button" data-icon="arrow-l" data-iconpos="notext">Back to song list</a><h1><span class="">Treasure</span></h1>
+    <a href="#about" data-rel="dialog" data-icon="info" class="ui-btn-right">About</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <div id="move-list">
+ 
+    <ul data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-theme="c">
+      <li><a href="#practice"><h3>Move Name</h3><p>1/13</p><p class="ui-li-aside">15% complete</p></a>
+      </li>
+      <li  data-theme="a"><h3>Move Name</h3><p>2/13</p><p class="ui-li-aside">Coming Soon</p>
+      </li>
+      <li data-theme="a"><h3>Move Name</h3><p>3/13</p><p class="ui-li-aside">Coming Soon</p>
+      </li>
+    </ul>
+
+    </div>  
+  </div><!-- /content -->
+
+</div><!-- /page --> 
+
 
 <!-- Practice page -->
 <div id="practice" data-role="page">
@@ -76,64 +125,6 @@
 
 </div><!-- /page -->
 
-<!-- Challenge page -->
-<div id="challenge" data-role="page">
-
-  <div data-role="header" data-position="fixed">
-    <h1>Challenge</h1>
-    <a href="#about" data-rel="dialog" data-icon="info" class="ui-btn-right">About</a>
-  </div><!-- /header -->
-
-  <div data-role="content">
-    <h1>Weekly Challenge - June 17</h1>
-    <div id="faces">
-      <img width="122" src="images/challenges_best-zombie-pose.jpg">
-    </div>
-    <p>Submit your best zombie pose! Tweet your pic and add #ttw2013 or email <a href="mailto: angel@thatsmymove.com">angel@thatsmymove.com</a>.</p>
-    <a class="camera-btn" href="#camera" data-role="button" data-theme="b">Take my picture</a>
-  </div><!-- /content -->
-
-  <div data-role="footer" data-id="footer" data-position="fixed">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#practice">Practice</a></li>
-        <li><a href="#challenge" class="ui-btn-active">Challenge</a></li>
-        <li><a href="#updates">Updates</a></li>
-      </ul>
-    </div><!-- /navbar -->
-  </div><!-- /footer -->
-
-</div><!-- /page -->
-
-
-<!-- Updates page -->
-<div id="updates" data-role="page">
-
-  <div data-role="header" data-position="fixed">
-    <h1>Updates</h1>
-    <a href="#about" data-rel="dialog" data-icon="info" class="ui-btn-right">About</a>
-  </div><!-- /header -->
-
-  <div data-role="content">
-    <h2>From the #ttw2013 flickr feed</h2>
-
-    <div id="feed"></div>
-  </div><!-- /content -->
-
-  <div data-role="footer" data-id="footer" data-position="fixed">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#practice">Practice</a></li>
-        <li><a href="#challenge">Challenge</a></li>
-        <li><a href="#updates" class="ui-btn-active">Updates</a></li>
-      </ul>
-    </div><!-- /navbar -->
-  </div><!-- /footer -->
-
-</div><!-- /page -->
-
 
 <!-- About page -->
 <div id="about" data-role="page">
@@ -143,18 +134,16 @@
   </div><!-- /header -->
 
   <div data-role="content">
-    <p>Become a Zombie and join over 10000 dancers in a world wide flash mob. Use our app to learn the dance moves to Michael Jackson's Thriller, connect with friends, and post your pictures online.  Your prize is to make history as we celebrate the 30th anniversary of Thriller and set out break the Guiness Book of World Records for the largest simultaneous Thriller dance. Roarrrr!</p>
+    <p>Learn to dance in 5 minutes a day!</p>
 
     <p>In our mobile app you can:</p>
     <ul>
-      <li>Collect over 20 Signature Michael Jackson Moves</li>
+      <li>Collect moves to popular songs</li>
       <li>Workout to a 6 minute dance routine</li>
       <li>Get quick 15 second dance lessons</li>
-      <li>Earn points for practicing so you stay motivated</li>
-      <li>Countdown timer to Thrilltime where everyone gathers to beat the world record.</li>
+      <li>Earn currency to unlock more songs (coming soon)</li>
     </ul>
     <p>Go from being a novice dancer to feeling like a pro!</p>
-    <p>Zombies Rise for a good cause.</p>
 
     <p>That'sMyMove! is a San Francisco based mobile product team. We exist to bring the joy of all types of dance and movement to people everywhere. Please follow us <a target="_blank" href="https://twitter.com/thatsmymove">@thatsmymove</a>.</p>
 

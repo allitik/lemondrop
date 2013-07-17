@@ -34,7 +34,6 @@
       { id: "UWVaUIS_gNQ", title: "ShuffleStare" },
       { id: "742vxSkNDys", title: "Down Ha" },
       { id: "1zIbbWP83Fw", title: "DownCLap" },
-//      { id: "BndIaxliI7s", title: "IV.1. HipRoar" },
       { id: "iSItFmz55Es", title: "WalkRoar" },
       { id: "sZxldn2X5x8", title: "JumpCircle" },
       { id: "eUH1SaU5jtQ", title: "Stomp" },
@@ -43,9 +42,6 @@
       { id: "mv3lKKidNPk", title: "AirGuitarRock" },
       { id: "7-bhEN9uv84", title: "GrabPullPunchDown" },
       { id: "EaecWwRm34k", title: "HoldShoulderKneesToes" },
-//      { id: "EZRWVqSAsRg", title: "VIII.2. HoldPoint Pose" },
-//      { id: "WZ5BiFplvU0", title: "VII.3. CrossStar" },
-//      { id: "BSWFIezhrdU", title: "VII.4. Thrilla" },
       { id: "HykVfQkZ_WE", title: "Stomp2down" },
       { id: "MKxwQgqrX0Y", title: "Full Dance" }
     ]
@@ -144,7 +140,28 @@
         titleSel = this.titleSel;
 
       this.cleanup();
-      var video = '<iframe width="350" height="263" type="text/html" src="http://www.youtube.com/embed/' + videoId + '?autoplay=1&loop=1&modestbranding=1&rel=0&controls=0&playlist=' + videoId + '" frameborder="0" allowfullscreen></iframe>';
+
+      // YouTube API scripts
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // Create YT.Player object first
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: videoId,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        }); 
+      }
+
+      var video = '<iframe id="player" width="350" height="263" type="text/html" src="http://www.youtube.com/embed/' + videoId + '?autoplay=1&loop=1&modestbranding=1&rel=0&controls=0&playlist=' + videoId + '" frameborder="0" allowfullscreen></iframe>';
       $(videoSel).prepend(video);
       $(titleSel).text(videoTitle);
     },
@@ -321,3 +338,6 @@
     window.App = App;
   });
 })();
+
+
+
